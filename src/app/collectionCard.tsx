@@ -27,7 +27,7 @@ export function CollectionCard({ image, collection, variable } : CollectionCardP
           <div className="text-[#535353] text-sm font-normal">Ownership / Token</div>
         </div>
         <hr className="border border-[#2a2b2b]"/>
-        <p className="mb-2 mt-5 ml-7 text-xs text-[#BDFF1E]">$ {collection.price}</p>
+        <p className="mb-2 mt-5 ml-7 text-xs text-[#BDFF1E]">$ {collection.price.toLocaleString()}</p>
         <ul className="mb-7 min-h-[70px] ml-7 mr-7 flex flex-col gap-y-2 text-white">
           {collection.perks.map(perk => (
             <li className="flex text-sm center-items">
